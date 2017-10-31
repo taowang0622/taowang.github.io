@@ -1,0 +1,25 @@
+{
+  "name": "taowang0622.github.io",
+  "homepage": "https://github.com/taowang0622/taowang0622.github.io",
+  "authors": [
+    "TaoWang <taowang0622@gmail.com>"
+  ],
+  "description": "My playground",
+  "main": "index.html",
+  "keywords": [
+    "playground"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}
