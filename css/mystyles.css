@@ -57,3 +57,7 @@ body {
 .table{
     width: 50%;
 }
+
+header a{
+    color: #fbfdff;
+}
