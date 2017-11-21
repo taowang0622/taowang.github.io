@@ -26,9 +26,11 @@
     <div class="container">
         <div class="row">
             <h1>Tao's Website</h1>
-            <p></p>
-            <a class="btn btn-social-icon btn-github" href="https://github.com/taowang0622"><i class="fa fa-github-square fa-3x"></i></a>
-            <a class="btn btn-social-icon btn-google" href="https://plus.google.com/u/0/"><i class="fa fa-google fa-3x"></i></a>
+            <p>This is sort of my portfolio of web projects.</p>
+            <a class="btn btn-social-icon btn-github" href="https://github.com/taowang0622"><i
+                    class="fa fa-github-square fa-3x"></i></a>
+            <a class="btn btn-social-icon btn-google" href="https://plus.google.com/u/0/"><i
+                    class="fa fa-google fa-3x"></i></a>
         </div>
     </div>
 </header>
@@ -59,15 +61,51 @@
                 <ul>
                     <li>Right now I just hardcode two users
                         <table class="table table-condensed table-bordered">
-                            <tr><th>user name</th><th>password</th></tr>
-                            <tr class="info"><td>buyer</td><td>reyub</td></tr>
-                            <tr class="info"><td>seller</td><td>relles</td></tr>
+                            <tr>
+                                <th>user name</th>
+                                <th>password</th>
+                            </tr>
+                            <tr class="info">
+                                <td>buyer</td>
+                                <td>reyub</td>
+                            </tr>
+                            <tr class="info">
+                                <td>seller</td>
+                                <td>relles</td>
+                            </tr>
                         </table>
-                        I will add the basic and OAuth sign-up feature and provide secure user authentication by using Spring Security
+                        I will add the basic and OAuth sign-up feature and provide secure user authentication by using
+                        Spring Security
                     </li>
-                    <li>Fix some bugs, like the shopping cart problem, image uploading problem, account page problem, etc.</li>
+                    <li>Fix some bugs, like the shopping cart problem, image uploading problem, account page problem,
+                        etc.
+                    </li>
                 </ul>
-                <a href="http://ec2-35-182-223-0.ca-central-1.compute.amazonaws.com" class="btn btn-xs btn-primary">access this website</a>
+                <a href="http://ec2-35-182-223-0.ca-central-1.compute.amazonaws.com" class="btn btn-xs btn-primary">access
+                    this website</a>
+            </div>
+        </div>
+    </div>
+    <div class="row row-content">
+        <div class="media">
+            <div class="media-left">
+                <a href="http://ec2-35-183-5-195.ca-central-1.compute.amazonaws.com">
+                    <img src="images/seckill.png" alt="seckill" class="media-object img-thumbnail img-size">
+                </a>
+            </div>
+            <div class="media-body">
+                <h2 class="media-heading">A Seckill Backend System</h2>
+                <h4>Frontend: Bootstrap, AngularJS</h4>
+                <h4>Backend: Spring Framework, MyBatis, MySQL, Redis, AWS, Docker</h4>
+                <p>A backend system is to handle the situation where many people purchase one item at the same time which is highly concurrent situation.</p>
+                <ul>
+                    <li>In this system, one client is only allowed to purchase one product once.</li>
+                    <li>To reduce the effect of network latency between JAVA client and MySQL and GC, I use Redis to cache data retrieved from MySQL.</li>
+                    <li>Since it happens a lot in this system that many threads update the same row in MySQL at the same time, it's necessary to reduce the time of
+                    each thread holding row-level locks. I use SQL stored procedures and restructure the transaction logic to achieve this.</li>
+                </ul>
+                <a href="http://ec2-35-183-5-195.ca-central-1.compute.amazonaws.com" class="btn btn-xs btn-primary">access
+                    this website</a>
             </div>
         </div>
     </div>
