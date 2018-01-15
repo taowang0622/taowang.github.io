@@ -39,6 +39,34 @@
     <div class="row row-content">
         <div class="media">
             <div class="media-left">
+                <a href="http://ec2-54-152-111-248.compute-1.amazonaws.com">
+                    <img src="images/seckill.png" alt="seckill" class="media-object img-thumbnail img-size">
+                </a>
+            </div>
+            <div class="media-body">
+                <h2 class="media-heading">A Seckill Backend System</h2>
+                <h4>Frontend: Bootstrap, AngularJS</h4>
+                <h4>Backend: Spring Framework, MyBatis, MySQL, Redis, AWS EC2 and RDS, Docker</h4>
+                <p>A backend system is to handle the situation where many people purchase one item at the same time which is highly concurrent situation.</p>
+                <ul>
+                    <li>In this system, one client is only allowed to purchase one product once.</li>
+                    <li>To reduce the effect of network latency between JAVA client and MySQL and GC, I use Redis to cache data retrieved from MySQL.</li>
+                    <li>Since it happens a lot in this system that many threads update the same row in MySQL at the same time, it's necessary to reduce the time of
+                        each thread holding row-level locks. I use SQL stored procedures and restructure the transaction logic to achieve this.</li>
+                </ul>
+                <p>To-Do List</p>
+                <ul>
+                    <li>Use Spring Async support to increase request throughput</li>
+                    <li>Use Logback and Spring interception to strengthen logging</li>
+                </ul>
+                <a href="http://ec2-54-152-111-248.compute-1.amazonaws.com" class="btn btn-xs btn-primary">access
+                    this website</a>
+            </div>
+        </div>
+    </div>
+    <div class="row row-content">
+        <div class="media">
+            <div class="media-left">
                 <a href="http://ec2-35-182-223-0.ca-central-1.compute.amazonaws.com">
                     <img src="./images/shopping.png" alt="shopping" class="media-object img-thumbnail img-size">
                 </a>
@@ -86,29 +114,7 @@
             </div>
         </div>
     </div>
-    <div class="row row-content">
-        <div class="media">
-            <div class="media-left">
-                <a href="http://ec2-54-152-111-248.compute-1.amazonaws.com">
-                    <img src="images/seckill.png" alt="seckill" class="media-object img-thumbnail img-size">
-                </a>
-            </div>
-            <div class="media-body">
-                <h2 class="media-heading">A Seckill Backend System</h2>
-                <h4>Frontend: Bootstrap, AngularJS</h4>
-                <h4>Backend: Spring Framework, MyBatis, MySQL, Redis, AWS, Docker</h4>
-                <p>A backend system is to handle the situation where many people purchase one item at the same time which is highly concurrent situation.</p>
-                <ul>
-                    <li>In this system, one client is only allowed to purchase one product once.</li>
-                    <li>To reduce the effect of network latency between JAVA client and MySQL and GC, I use Redis to cache data retrieved from MySQL.</li>
-                    <li>Since it happens a lot in this system that many threads update the same row in MySQL at the same time, it's necessary to reduce the time of
-                    each thread holding row-level locks. I use SQL stored procedures and restructure the transaction logic to achieve this.</li>
-                </ul>
-                <a href="http://ec2-54-152-111-248.compute-1.amazonaws.com" class="btn btn-xs btn-primary">access
-                    this website</a>
-            </div>
-        </div>
-    </div>
+
 </div>
 </body>
 </html>
